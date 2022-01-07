@@ -6,7 +6,7 @@ const ioserver = (server) => {
     const io = new Server(server, {
         cors: {
             origin: config.ServerName,
-            method: ["POST"]
+            method: ["POST", "GET"]
         },
     })
 
